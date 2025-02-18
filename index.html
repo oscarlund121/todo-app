@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>ToDo App</title>
+</head>
+<body>
+  <h1>To-do List</h1>
+  
+  <form id="task_form">
+    <input type="text" id="task_input" placeholder="Add a new task" aria-label="Task">
+    <input type="date" id="task_deadline" aria-label="date">
+    <select id="task_category">
+      <option value="Work">Work</option>
+      <option value="Personal">Personal</option>
+      <option value="Errands">Errands</option>
+    </select>
+    <button type="button" id="task_button">Add Task</button>
+  </form>
+  
+  
+  <div class="list-container">
+    <div class="list">
+      <h2>To-Do</h2>
+      <ul class="to_do_list"></ul>
+    </div>
+    
+    <div class="list">
+      <h2>Completed</h2>
+      <ul class="completed_list"></ul>
+    </div>
+  </div>
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>

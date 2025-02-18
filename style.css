@@ -1,0 +1,166 @@
+/* --- Generelt layout --- */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #444;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* --- Formular styling --- */
+form {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+input, select {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background-color: white;
+}
+
+select {
+  cursor: pointer;
+}
+
+/* --- Knapper --- */
+button {
+  padding: 0.75rem 1rem;
+  border: none;
+  background-color: #007aff;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #005bb5;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* --- Lister (To-Do og Completed) --- */
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 500px;
+}
+
+li {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+/* --- Opgave tekst --- */
+li h3 {
+  margin: 0;
+  font-size: 1rem;
+  flex: 1;
+  font-weight: 500;
+}
+
+.colorDone h3 {
+  text-decoration: line-through;
+  color: #777;
+}
+
+/* --- Slet- og Undo-knapper --- */
+button.delete_button {
+  background-color: #ff3b30;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+button.delete_button:hover {
+  background-color: #d32f2f;
+}
+
+button.undo_button {
+  background-color: #007aff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+button.undo_button:hover {
+  background-color: #005bb5;
+}
+
+/* --- Kategorier: Gør dem visuelle --- */
+.category {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 5px;
+  color: black;
+  margin-left: 10px;
+}
+
+.work {
+  border-left: 5px solid #007aff;
+  background-color: #e6f0ff;
+}
+
+.personal {
+  border-left: 5px solid #ff3b30;
+  background-color: #ffe6e6;
+}
+
+.errands {
+  border-left: 5px solid #ffcc00;
+  background-color: #fff5cc;
+}
+
+/* --- Checkbox styling --- */
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
