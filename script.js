@@ -54,7 +54,7 @@ function showToDoList() {
     
     if (task.deadline) {
       const deadlineP = document.createElement("p");
-      deadlineP.textContent = new Date(task.deadline).toLocaleDateString(); // Kun dato
+      deadlineP.textContent = new Date(task.deadline).toLocaleDateString(); 
       li.appendChild(deadlineP);
     }
     

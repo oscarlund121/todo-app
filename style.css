@@ -7,8 +7,8 @@ body {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   max-height: 100vh;
 }
 
@@ -20,15 +20,16 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1.9rem;
+  font-weight: 800;
   color: black;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  text-decoration: underline;
 }
 .list-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* To lige store kolonner */
+  grid-template-columns: 1fr 1fr; 
   gap: 80px;
   width: 100%;
   max-width: 900px;
@@ -37,7 +38,7 @@ h2 {
 
 .list {
   background-color: white;
-  padding: 1.5rem;
+  padding: 1.2rem;
   border-radius: 12px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
   min-height: 300px;
@@ -92,7 +93,7 @@ ul {
   list-style: none;
   padding: 0;
   width: 100%;
-  max-width: 500px;
+  max-width: 700px;
 }
 
 li {
@@ -103,6 +104,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.5rem; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
@@ -115,13 +117,12 @@ li:hover {
 li h3 {
   margin: 0;
   font-size: 1rem;
-  flex: 1;
   font-weight: 500;
 }
 
 .colorDone h3 {
   text-decoration: line-through;
-  color: #777;
+  color: #777777;
 }
 
 /* --- Slet- og Undo-knapper --- */
@@ -142,6 +143,7 @@ button.undo_button {
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 8px;
+  margin-right: 10px;
 }
 
 button.undo_button:hover {
