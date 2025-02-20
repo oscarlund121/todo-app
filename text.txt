@@ -1,5 +1,0 @@
-Ressourcer:
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
-- ChatGPT til hjælp med localStorage 
-- Pensum til hjælp af opgave 
-- Coolors til at finde farver
