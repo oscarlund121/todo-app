@@ -9,7 +9,7 @@ const taskCategoryQsl = document.querySelector("#task_category");
 
 showToDoList();
 
-taskButtonQsl.addEventListener("click", () => {
+function addTask() {
   const newTaskText = taskInputQsl.value;
   const newTaskDeadline = taskDeadlineQsl.value;
   const newTaskCategory = taskCategoryQsl.value;
@@ -30,12 +30,19 @@ taskButtonQsl.addEventListener("click", () => {
     taskInputQsl.value = "";
     taskDeadlineQsl.value = "";
   }
+}
+
+taskButtonQsl.addEventListener("click", addTask);
+
+taskInputQsl.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") addTask();
 });
+
 
 function showToDoList() {
   saveToLocalStorage();
 
-  toDoArr.sort((a, b) => new Date(a.deadline) - new Date(b.deadline)); // Sortér efter deadline
+  toDoArr.sort((a, b) => new Date(a.deadline) - new Date(b.deadline)); 
 
   toDoListQsl.innerHTML = "";
   completedListQsl.innerHTML = "";
