@@ -1,4 +1,4 @@
-/* --- Generelt layout --- */
+
 body {
   font-family: "Inter", sans-serif;
   background-color: #f4f4f9;
@@ -45,7 +45,6 @@ h2 {
   width: 100%;
 }
 
-/* --- Formular styling --- */
 form {
   display: flex;
   gap: 0.5rem;
@@ -69,7 +68,6 @@ select {
   cursor: pointer;
 }
 
-/* --- Knapper --- */
 button {
   padding: 0.75rem 1rem;
   border: none;
@@ -88,7 +86,6 @@ button:hover {
   transform: translateY(-1px);
 }
 
-/* --- Lister (To-Do og Completed) --- */
 ul {
   list-style: none;
   padding: 0;
@@ -113,7 +110,7 @@ li:hover {
   transform: scale(1.02);
 }
 
-/* --- Opgave tekst --- */
+
 li h3 {
   margin: 0;
   font-size: 1rem;
@@ -125,7 +122,6 @@ li h3 {
   color: #777777;
 }
 
-/* --- Slet- og Undo-knapper --- */
 button.delete_button {
   background-color: #ff3b30;
   color: white;
@@ -150,7 +146,6 @@ button.undo_button:hover {
   background-color: #005bb5;
 }
 
-/* --- Kategorier: Gør dem visuelle --- */
 .category {
   font-size: 0.7rem;
   font-weight: 600;
